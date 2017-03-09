@@ -8,12 +8,11 @@
              printErrorUser = document.getElementById('errorUser'),
              printErrorPass = document.getElementById('errorPassword');
 
-        var expressionEmail=/\w+@+\w+\.+[a-z]/;
+         var expressionEmail=/\w+@+\w+\.+[a-z]/;
 
           (user.value==""  )  ?(document.getElementById('errorUser').innerHTML= "The field is empty"): "";
           (password.value=="")?(document.getElementById('errorPassword').innerHTML = "The field is empty"): "";
 
-         (!expressionEmail.test(user.value)) ? printErrorUser.innerHTML= "The user name or email is no valid" : "";
-
+         (!expressionEmail.test(user.value)) ? printErrorUser.innerHTML= "The username or email is no valid" : "";
     })
   })
