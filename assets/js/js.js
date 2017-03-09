@@ -12,7 +12,6 @@
 
           (user.value==""  )  ?(document.getElementById('errorUser').innerHTML= "The field is empty"): "";
           (password.value=="")?(document.getElementById('errorPassword').innerHTML = "The field is empty"): "";
-
          (!expressionEmail.test(user.value)) ? printErrorUser.innerHTML= "The username or email is no valid" : "";
     })
   })
