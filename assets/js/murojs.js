@@ -35,13 +35,13 @@ window.addEventListener("load", function(){
   }
     createPost();
 
-    var deleteButton = document.createElement("button");
+  /* var deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", function(event){
       event.preventDefault();
     function delete(){
       alert("seeeee")
     }
-  })
+  })*/
   })
 
 })
