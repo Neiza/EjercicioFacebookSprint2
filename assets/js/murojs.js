@@ -8,12 +8,12 @@ window.addEventListener("load", function(){
   postButton.disabled=false;
   })
 
+
   postButton.addEventListener("click", function(event){
     event.preventDefault();
     //  var status = document.getElementById('actualStatus');
     /*  printStatus.innerHTML+=status.value+"<br>";
       status.value="";*/
-
   function createPost(){
     var post = document.createElement("div");
     var texto= document.createElement("p");
@@ -34,6 +34,14 @@ window.addEventListener("load", function(){
 
   }
     createPost();
+
+    var deleteButton = document.createElement("button");
+    deleteButton.addEventListener("click", function(event){
+      event.preventDefault();
+    function delete(){
+      alert("seeeee")
+    }
+  })
   })
 
 })
