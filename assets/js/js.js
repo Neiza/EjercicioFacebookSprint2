@@ -10,9 +10,9 @@
 
          var expressionEmail=/\w+@+\w+\.+[a-z]/;
 
-          (user.value==""  )  ?(document.getElementById('errorUser').innerHTML= "The field is empty"): "";
-          (password.value=="")?(document.getElementById('errorPassword').innerHTML = "The field is empty"): "";
+          (user.value==""  )  ?printErrorUser.innerHTML= "The field is empty": printErrorUser.innerHTML="";
+          (password.value=="")?(printErrorPass.innerHTML = "The field is empty"):printErrorPass.innerHTML = "";
 
-         (!expressionEmail.test(user.value)) ? printErrorUser.innerHTML= "The username or email is no valid" : "";
+         (!expressionEmail.test(user.value)) ? printErrorUser.innerHTML= "The username or email is no valid" : printErrorUser.innerHTML="";
     })
   })
