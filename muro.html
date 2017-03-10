@@ -8,11 +8,14 @@
 </head>
 <body>
 <label for="status"></label>
-<textarea name="status" rows="8" cols="80" id="actualStatus" placeholder="what's happening" autofocus=""></textarea>
+<textarea name="status" rows="8" cols="80" id="actualStatus" placeholder="what's happening" autofocus="" value="onchange" ></textarea>
 <br>
-<button type="submit" name="friends" >Friends</button>
-<button type="submit" name="public" onclick="public()">Public</button>
-<div id="div-status" clas=""></div>
+<select class="" name="">
+  <option value="">Friends</option>
+  <option value="">Public</option>
+</select>
+<button type="submit" id="post" >Post</button>
+<div id="divStatus" clas=""></div>
 <script type="text/javascript" src="assets/js/murojs.js">
 </script>
 </body>
